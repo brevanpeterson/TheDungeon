@@ -21,3 +21,10 @@ int calcMod(int ability) {
 	int modifier = (ability - 10) / 2; // This will slice the decimal point off, effectively rounding down
 	return modifier;
 }
+
+void Player::printAbilities() {
+	for (auto ability : abilities) {
+		std::cout << ability << " ";
+	}
+	std::cout << std::endl;
+}

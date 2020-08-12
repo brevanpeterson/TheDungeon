@@ -1,6 +1,7 @@
 #pragma once
 #include <string>
 #include <vector>
+#include <iostream>
 
 class Player
 {
@@ -18,6 +19,7 @@ public:
 	void fillModifiers();
 
 	// Getters and Setters
+	void printAbilities();
 	
 };
 
