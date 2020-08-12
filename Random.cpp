@@ -25,7 +25,7 @@ int rollAbility() {
 
 std::vector<int> rollAbilities() {
     std::vector<int> abilities;
-    for (int i{ 0 }; i < 5; i++) {
+    for (int i{ 0 }; i < 6; i++) {
         abilities.push_back(rollAbility());
     }
     return abilities;
