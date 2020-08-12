@@ -25,8 +25,12 @@ int rollAbility() {
 
 std::vector<int> rollAbilities() {
     std::vector<int> abilities;
+    std::cout << "Rolling Character Ability Scores ... ";
     for (int i{ 0 }; i < 6; i++) {
-        abilities.push_back(rollAbility());
+        int ability = rollAbility();
+        abilities.push_back(ability);
+        std::cout << ability << " ";
+        std::this_thread::sleep_for(std::chrono::seconds(1));
     }
     return abilities;
 
