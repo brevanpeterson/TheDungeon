@@ -23,8 +23,7 @@ int calcMod(int ability) {
 }
 
 void Player::printAbilities() {
-	for (auto ability : abilities) {
-		std::cout << ability << " ";
-	}
+	std::cout << "STR: " << abilities[0] << "   DEX: " << abilities[1] << "   CON: " << abilities[2] << std::endl;
+	std::cout << "WIS: " << abilities[3] << "   INT: " << abilities[4] << "   CHA: " << abilities[5] << std::endl;
 	std::cout << std::endl;
 }
