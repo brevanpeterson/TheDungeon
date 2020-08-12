@@ -2,6 +2,9 @@
 #include "Random.h"
 #include "Player.h"
 #include "Fighter.h"
+#include "Bard.h"
+#include "Rogue.h"
+#include "Wizard.h"
 
 int main()
 {
@@ -12,4 +15,17 @@ int main()
     Fighter test_fighter("Geralt", scores);
     test_fighter.sortAbilities();
     test_fighter.printAbilities();
+
+    Rogue test_rogue("Geralt", scores);
+    test_rogue.sortAbilities();
+    test_rogue.printAbilities();
+
+    Bard test_bard("Geralt", scores);
+    test_bard.sortAbilities();
+    test_bard.printAbilities();
+
+    Wizard test_wizard("Geralt", scores);
+    test_wizard.sortAbilities();
+    test_wizard.printAbilities();
+    
 }
